@@ -1,14 +1,29 @@
-public class Main {
+    public class Main {
     public static void main(String[] args) {
-        //Skapa ett objekt med Account card = new Account ().
-        Account card = new Account();
+        //Återanvänd Account-klass från uppgift 1, inga nya fält.
+        //Skapa två objekt, ticketMira och ticketNoel, i main med var sitt new Account().
         
-        //Sätt card.owner och card.balance till värdena "Alex" och 350.0.
-        card.owner = "Alex";
-        card.balance = 350.0;
+        Account ticketMira = new Account();
+        Account ticketNoel = new Account();
+        
+        //Sätt Mira: owner = "Mira", balance = 420.0 och Noel: owner = "Noel", balance = 90.0.
 
-        //Skriv ut fälten med System.out.println.
-        System.out.println(card.owner);
-        System.out.println(card.balance);
+        ticketMira.owner = "Mira";
+        //ticketMira.balance = 420.0;
+        //Ändra Miras balance till 380.0 istället för 420.0.
+        ticketMira.balance = 380.0;
+
+        ticketNoel.owner = "Noel";
+        ticketNoel.balance = 90.0;
+
+        //Skriv ut båda objektens fält.
+        System.out.println(ticketMira.owner + ": " + ticketMira.balance);
+        System.out.println(ticketNoel.owner + ": " + ticketNoel.balance);
+
+        //Gör en medveten "fel-utskrift": System.out.println(ticketMira).
+        //Notera vad som syns. Skriv en mening i Docs: varför det inte är namnet Mira. 
+        System.out.println(ticketMira);
+        //Det som skrivs ut i konsolen är Account@6b95977.
+
     }
 }
