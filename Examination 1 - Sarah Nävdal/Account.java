@@ -7,16 +7,16 @@ public class Account {
     public Account(String owner, double balance) {
         this.owner = owner;
         this.balance = balance;
-    }
+}
 
     //Getter method for owner.
     public String getOwner() {
         return owner;
-    }
+}
     //Getter method for balance.
     public double getBalance() {
         return balance;
-    }
+}
 
     //Method to deposit money into the account.
     public void deposit(double amount) {
@@ -42,6 +42,6 @@ public class Account {
         } else {
             System.out.println("Withdrawal amount must be positive.");
         }
-        
+
     }
 }
