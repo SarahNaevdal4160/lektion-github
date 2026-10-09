@@ -1,3 +1,7 @@
+[
+](https://funet-my.sharepoint.com/:v:/g/personal/3kdyhapp26_navdsa_folkuniversitetet_nu/IQAAVS0iSGE-SpSVShE0nPzPAcl4u4U4Kto93mNOjP3Ifhg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GcSucF)
+
+
 Exam 1
 
 
