@@ -32,7 +32,7 @@ public class Main { // Declare the Main class, which contains the main method to
                     String owner = scanner.nextLine(); // Read the owner's name from user input.
                     double initialBalance = 0; // Initialize initialBalance variable to store the initial balance for the new account.
                     try {
-                        System.out.print("Enter initial balance: "); // Prompt the user to enter the initial balance for the new account.
+                        System.out.print("Enter initial balance $: "); // Prompt the user to enter the initial balance for the new account.
                         initialBalance = scanner.nextDouble(); // Read the initial balance from user input.
                         scanner.nextLine(); // Consume newline
                     } catch (InputMismatchException e) { // Catch the InputMismatchException if the user enters invalid input for the initial balance.
@@ -50,7 +50,7 @@ public class Main { // Declare the Main class, which contains the main method to
                     String depositOwner = scanner.nextLine(); // Read the owner's name from user input.
                     Account depositAccount = accountRegister.findAccount(depositOwner); // Call the findAccount method on the accountRegister object to find the account associated with the provided owner name.
                     if (depositAccount != null) { // Check if the account exists (not null).
-                        System.out.println("Current balance: " + depositAccount.getBalance() + "kr"); // Display the current balance of the account before the deposit.
+                        System.out.println("Current balance: " + "$ " +depositAccount.getBalance()); // Display the current balance of the account before the deposit.
                         double depositAmount = 0; // Initialize depositAmount variable to store the amount to deposit.
                         try {
                             System.out.print("Enter amount to deposit: "); // Prompt the user to enter the amount to deposit.
@@ -73,7 +73,7 @@ public class Main { // Declare the Main class, which contains the main method to
                     String withdrawOwner = scanner.nextLine(); // Read the owner's name from user input.
                     Account withdrawAccount = accountRegister.findAccount(withdrawOwner); // Call the findAccount method on the accountRegister object to find the account associated with the provided owner name.
                     if (withdrawAccount != null) { // Check if the account exists (not null).
-                        System.out.println("Current balance: " + withdrawAccount.getBalance() + "kr"); // Display the current balance of the account before the withdrawal.
+                        System.out.println("Current balance: " + "$ " + withdrawAccount.getBalance()); // Display the current balance of the account before the withdrawal.
                         System.out.flush(); // Flush the output stream to ensure that the current balance is displayed before prompting for withdrawal amount.
                         double withdrawAmount = 0; // Initialize withdrawAmount variable to store the amount to withdraw.
                         try { // Start of try block to handle potential InputMismatchException.
